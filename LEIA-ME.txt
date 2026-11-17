@@ -1,0 +1,13 @@
+PRIME SERVICE PISCINAS — PÁGINA DE LINKS
+
+Arquivos:
+- index.html: página principal.
+- logo-prime-service.jpeg: logo oficial usada no topo.
+
+Atualização desta versão:
+- Removido o botão "Como chegar".
+- Adicionado o botão "Avalie nossa empresa", que abre o link de avaliações do Google fornecido.
+- Mantidos os canais de WhatsApp, Instagram, Facebook, site oficial e endereço.
+
+PUBLICAÇÃO GRATUITA:
+Publique os arquivos desta pasta em um serviço de hospedagem estática gratuito, como GitHub Pages. Mantenha index.html e logo-prime-service.jpeg juntos na mesma pasta.
