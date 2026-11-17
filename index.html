@@ -266,6 +266,56 @@ body {
     padding: 0 16px 22px;
   }
 }
+  
+/* MELHORIAS VISUAIS */
+.hero {
+  padding: 35px 20px;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 185px;
+  max-width: 75%;
+  max-height: 190px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 15px;
+}
+
+.service {
+  border-radius: 14px;
+  padding: 17px;
+  box-shadow: 0 4px 12px #071d4310;
+  transition: transform .2s;
+}
+
+.service:hover {
+  transform: translateY(-3px);
+}
+
+.link {
+  border-radius: 14px;
+  padding: 17px;
+  transition: transform .2s, filter .2s;
+}
+
+.link:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 165px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+}
+
 </style>
 </head>
 
