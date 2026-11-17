@@ -25,10 +25,16 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(180deg, #061a3b 0, #0a3262 42%, #edf7fb 42%, #edf7fb 100%);
+  background: linear-gradient(
+    180deg,
+    #061a3b 0,
+    #0a3262 340px,
+    #edf7fb 340px,
+    #edf7fb 100%
+  );
   color: var(--ink);
   min-height: 100vh;
-  padding: 28px 16px 40px;
+  padding: 35px 16px 40px;
 }
 
 .wrap {
@@ -38,78 +44,93 @@ body {
 
 .card {
   background: #fff;
-  border-radius: 26px;
+  border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 18px 55px #00152c40;
 }
 
+/* CABEÇALHO */
+
 .hero {
-  padding: 28px 24px 24px;
+  padding: 32px 22px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  background: linear-gradient(145deg, #fff, #f2fbff);
+  background: linear-gradient(145deg, #ffffff, #f2fbff);
   border-bottom: 5px solid var(--gold);
 }
 
 .logo {
   display: block;
-  width: 230px;
-  max-width: 85%;
+  width: 185px;
+  max-width: 75%;
   height: auto;
-  max-height: 240px;
+  max-height: 190px;
   object-fit: contain;
-  margin: 0 auto 16px;
-  border-radius: 12px;
+  margin: 0 auto 18px;
 }
 
 .eyebrow {
   font-size: 11px;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   font-weight: 800;
   color: #0b3970;
   text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 .hero h1 {
   font-size: 25px;
   letter-spacing: 1px;
   color: var(--navy);
-  margin: 8px 0;
+  margin: 8px 0 10px;
+  line-height: 1.2;
 }
 
 .hero p {
-  margin: 0;
+  max-width: 390px;
+  margin: 0 auto;
   color: var(--muted);
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
+
+/* SERVIÇOS */
 
 .services {
-  padding: 22px;
+  padding: 28px 22px 20px;
   text-align: center;
+  background: #fff;
 }
 
-.services h2,
-.section h2 {
-  font-size: 16px;
+.services h2 {
+  font-size: 18px;
   color: #0b3970;
-  margin: 0 0 14px;
+  margin: 0 0 20px;
 }
 
 .service {
-  background: #f1f7fb;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: #f5f9fc;
+  border: 1px solid #e5edf4;
   border-left: 4px solid var(--gold);
-  padding: 13px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
   font-size: 14px;
+  line-height: 1.5;
   color: #17365d;
+  box-shadow: 0 3px 10px #00152c08;
 }
 
+/* BOTÕES */
+
 .links {
-  padding: 5px 22px 22px;
+  padding: 8px 22px 25px;
   display: grid;
   gap: 12px;
 }
@@ -120,59 +141,138 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 16px;
-  border-radius: 15px;
+  min-height: 52px;
+  border-radius: 13px;
   text-decoration: none;
   color: #fff;
   font-weight: 700;
+  font-size: 14px;
   box-shadow: 0 5px 12px #00152c18;
-  transition: transform .15s;
+  transition: transform .2s, filter .2s, box-shadow .2s;
 }
 
 .link:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  filter: brightness(1.07);
+  box-shadow: 0 8px 16px #00152c25;
 }
 
-.wa { background: #159b61; }
-.ig { background: linear-gradient(110deg, #833ab4, #e1306c, #f77737); }
-.fb { background: #1877f2; }
-.web { background: #0b3970; }
-.review { background: linear-gradient(110deg, #b47a00, #e5a900); }
+.wa {
+  background: #159b61;
+}
+
+.ig {
+  background: linear-gradient(110deg, #833ab4, #e1306c, #f77737);
+}
+
+.fb {
+  background: #1877f2;
+}
+
+.web {
+  background: #0b3970;
+}
+
+.review {
+  background: linear-gradient(110deg, #b47a00, #e5a900);
+}
+
+/* ENDEREÇO */
 
 .section {
-  padding: 0 24px 24px;
+  padding: 0 22px 25px;
 }
 
 .section h2 {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 13px;
+  color: #0b3970;
+  margin: 0 0 13px;
+  text-align: center;
 }
 
 .address {
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #53647a;
   background: #f1f7fb;
+  border: 1px solid #e5edf4;
   border-radius: 13px;
-  padding: 15px;
+  padding: 17px;
   text-align: center;
 }
+
+/* RODAPÉ */
 
 .foot {
   text-align: center;
   color: #d9e9f7;
   font-size: 11px;
-  margin: 18px 8px 0;
+  line-height: 1.7;
+  margin: 20px 8px 0;
 }
 
 .foot strong {
   color: #fff;
+  letter-spacing: 1px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px 12px 30px;
+    background: linear-gradient(
+      180deg,
+      #061a3b 0,
+      #0a3262 260px,
+      #edf7fb 260px,
+      #edf7fb 100%
+    );
+  }
+
+  .card {
+    border-radius: 20px;
+  }
+
+  .hero {
+    padding: 26px 16px 23px;
+  }
+
+  .logo {
+    width: 165px;
+    max-height: 165px;
+    margin-bottom: 15px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .services {
+    padding: 24px 16px 16px;
+  }
+
+  .links {
+    padding: 8px 16px 22px;
+  }
+
+  .section {
+    padding: 0 16px 22px;
+  }
 }
 </style>
 </head>
 
 <body>
+
 <main class="wrap">
+
 <article class="card">
 
 <header class="hero">
@@ -195,12 +295,14 @@ Entre em contato e conheça nossos serviços e soluções para sua piscina.
 </header>
 
 <section class="services">
+
 <h2>Nossos serviços</h2>
 
 <div class="service">💧 Limpeza e higienização de piscinas</div>
 <div class="service">⚙️ Manutenção de bombas e equipamentos</div>
 <div class="service">🧪 Tratamento e controle da água</div>
 <div class="service">🏊 Venda de produtos e equipamentos</div>
+
 </section>
 
 <nav class="links" aria-label="Canais oficiais">
@@ -244,6 +346,7 @@ target="_blank" rel="noopener">
 </nav>
 
 <section class="section">
+
 <h2>Endereço</h2>
 
 <div class="address">
@@ -251,6 +354,7 @@ R. José Bonifácio, 1050 — 401 BL 01<br>
 Todos os Santos, Rio de Janeiro — RJ<br>
 CEP 20770-240
 </div>
+
 </section>
 
 </article>
@@ -261,5 +365,6 @@ Todos os canais em um só lugar.
 </p>
 
 </main>
+
 </body>
 </html>
